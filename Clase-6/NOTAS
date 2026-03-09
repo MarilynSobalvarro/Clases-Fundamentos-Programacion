@@ -1,0 +1,47 @@
+consoleo.log('Hola mundo!');
+
+const age = 33
+var number = 10;
+
+var numberFloat = 15.60;
+console.log(numberFloat + 10); // Suma Valor /
+
+let numberWithZero = '15.60';
+console.log(numberWithZero + 10) //
+
+let name = 'Marilyn';
+
+true || false
+
+// OPERADORES +, -, *, /
+
+const suma = 40 + 20;
+const otraSuma = suma + 74;
+console.log(otrasuma);
+
+const suma = (40 + 20) * 2;
+console.log(suma);
+
+// No usar parentesis cuadrado porque son para listas /
+const suma = ((40 + 20) * 2);
+console.log(suma);
+
+// Strings (variable de texto) / 
+let name = 'Marilyn';
+const lastName = 'Sobalvarro';
+
+console.log(name + lastName);
+
+
+//Booleans
+true
+false
+
+// && -> and o y
+const num = 10;
+consol.log(num < 2);
+
+// || -> or -> o
+
+const num = 10;
+console.log (num == 10);
