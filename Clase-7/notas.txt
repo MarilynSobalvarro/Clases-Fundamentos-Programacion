@@ -1,0 +1,74 @@
+&6 AND
+|| OR 
+! NOT
+
+Condiciones dentro del parentesis
+if (5 == && 4 < 10 && 3 != 7) {
+        console.log('La condicion es cierta');
+} else {
+    console.log('La condicion es false')
+}
+
+
+if (5 == && 4 > 10 || 3 == 7) {
+        console.log('La condicion es cierta');
+} else {
+    console.log('La condicion es false')
+}
+
+
+const expresion1 = 5 > 10;
+console.log('Expresion1 ', expresion1);
+ 
+const expresion2 = 3 < 10;
+console.log('Expresion2 ', expresion2);
+ 
+const expresion3 = 2 === 2;
+console.log('Expresion3 ', expresion3);
+ 
+const expresion4 = 3 != 3;
+console.log('Expresion4 ', expresion4);
+ 
+ 
+// TRUE && TRUE
+console.log('TRUE&&TRUE', expresion2 && expresion3);
+ 
+// FALSE && TRUE
+console.log('FALSE&&TRUE', expresion1 && expresion3);
+ 
+// TRUE && FALSE
+console.log('TRUE&&FALSE', expresion2 && expresion4);
+ 
+// FALSE && FALSE
+console.log('FALSE&&FALSE', expresion1 && expresion4);
+ 
+// TRUE || TRUE
+console.log('TRUE||TRUE', expresion2 || expresion3);
+ 
+// FALSE || TRUE
+console.log('FALSE||TRUE', expresion1 || expresion3);
+ 
+// TRUE || FALSE
+console.log('TRUE||FALSE', expresion2 || expresion4);
+ 
+// FALSE || FALSE
+console.log('FALSE||FALSE', expresion1 || expresion4)
+
+
+
+/* */
+console.log((5 == 5) && ('3 != 3'));
+
+/* */
+true && console.log('Esto codigo se ejecuta');
+
+
+
+/* Puedes conducir si tienes 18 años o más y posees licencia */
+const age = 24; 
+const hasLicense = true;
+const conditions = age >= 18 && hasLicense == true;
+
+conditions && console.log('SI PUEDES CONDUCIR');
+
+console.log(age >= 18 && hasLicense)
