@@ -1,0 +1,122 @@
+// Para un supermercado con 1 cajero, codifique un programa 
+// que calcule cuánto tiempo le va a tomar a este cajero atender 
+// una fila de x cantidad de compradores 
+
+// Input es un número entre 0 y 90
+const cantidadDeClientes = 25; *
+
+/* Reglas
+- Estas reglas aplican para todos los clientes:
+    * Los clientes pares toman su propio numero en minutos + 45 segundos
+    * Los clientes impares toman 20 segundos *
+
+
+- Estas reglas aplican como un extra sobre las reglas anteriores
+    * Los clientes múltiplos de 10 toman 18 minutos y 11 segundos más
+    * Los clientes múltiplos de 5 toman 37 minutos más
+- Ejemplo: Para el cliente 20 aplica la regla par (20m45s) + la regla multiplo de 10 (18m11s)
+por lo que el cliente 20 toma en total 38 minutos y 56 segundos 
+*/
+
+// Output Logs
+// Si al cajero le toma menos de 60 segundos:
+"A el cajero le va a tomar 48 segundos"
+// Si al cajero le toma más de 60 segundos:
+"A el cajero le va a tomar 3 minutos y 48 segundos"
+// Si al cajero le va a tomar más de 60 minutos:
+"A el cajero le va a tomar 1 hora, 22 minutos y 3 segundos"
+
+// Documentación
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+// Ejemplos:
+
+// Si la cantidad de clientes es 1
+"A el cajero le va a tomar 20 segundos"
+
+// Si  la cantidad de clientes es 5
+"A el cajero le va a tomar 45 minutos y 30 segundos'"
+
+// Si la cantidad de clientes es 25
+"A el cajero le va a tomar 5 horas, 54 minutos y 20 segundos"
+
+
+----------
+
+// Proyecto 2 - Cajero
+
+// PRACTICA
+// for (inicio; condicion; cambio) 
+
+/* FOR
+for (let i = 1; i <=10; i++) {
+    console.log(i)
+}
+*/
+
+/* PAR - IMPAR
+for (let i = 1; i <=10; i++) {
+    if (i % 2 === 0) {
+        console.log(i + " es par"); 
+    } else {
+        console.log(i + " es impar")
+    }
+}
+*/
+
+/* MULTIPLO
+for (let i = 1; i <=10; i++) {
+    if (i % 10 === 0) {
+        console.log(i + " multiplo de 10");
+    } else if (i % 5 === 0) {
+        console.log(i + " multiplo de 5");
+    } else {
+        console.log(i + " otro");
+    }
+}
+*/
+
+/* ACUMULADOR
+let total = 0;
+
+for (let i = 1; i <=5; i++) {
+    total += i;
+}
+
+console.log(total);
+*/
+
+/*
+let hora = 3
+let segundos = hora * 3600
+console.log(segundos)
+*/
+
+/*
+let minutos = 2
+let segundos = 30
+let total = (minutos * 60) + segundos;
+
+console.log(total)
+*/
+
+/*
+let totalSegundos = 125
+
+let minutos = Math.floor(totalSegundos / 60);
+let segundos = totalSegundos % 60
+
+console.log(minutos + " minutos y " + segundos + " segundos")
+*/
+
+/*
+let totalSegundos = 3665
+
+let horas = Math.floor(totalSegundos / 3600)
+let sobrante = totalSegundos % 3600
+
+let minutos = Math.floor(sobrante / 60)
+let segundos = sobrante % 60
+
+console.log(horas + ' hora ' + minutos + ' minutos ' + segundos + ' segundos ')
+*/
