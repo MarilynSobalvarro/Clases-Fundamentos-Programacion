@@ -1,0 +1,36 @@
+
+/// Tarea 2
+
+// Ejercicio 1
+
+// Utilice loops para calcular la suma de cada digito de un número
+// Por ejemplo: Para el número 364, la suma sería 3+6+4 = 13
+// Otro ejemplo: Para el número 1252, la suma sería 1+2+5+2 = 10;
+
+// INPUT
+// El input es un número positivo (mayor que 0)
+const number = 364;
+
+// OUTPUT
+// El output es la suma de cada dígito de number
+console.log(`La suma de los dígitos del número ${number} es ${sum}`);
+// Ejemplo: "La suma de los dígitos del número 364 es 13"
+
+
+
+// Ejercicio 2 - PUNTOS EXTRA!
+// Utilice loops y condicionales para calcular la cantidad de vocales de una palabra
+// Se espera el calculo de todas las vocales de la palabra y también la cantidad de vocales únicas
+// Por ejemplo: Para la palabra casa, la cantidad de vocales es 2 y la cantidad de vocales únicas es 1
+// Otro ejemplo: Para la palabra murciélago, la cantidad de vocales es 5 y la cantidad de vocales únicas es 5
+
+// INPUT
+// El input es un string cualquiera
+const word = "zapato";
+
+// OUTPUT
+// El output es la cantidad de vocales presentes en la palabra
+console.log(`La palabra ${word} tiene ${totalAmount} vocales totales y ${uniqueAmount} vocales únicas`);
+// Ejemplo: La palabra zapato tiene 3 vocales totales y 2 vocales únicas
+Mi trabajo
+
